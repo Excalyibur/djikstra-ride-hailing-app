@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!--Customer homepage after booking a ride-->
+    <div id="welcome" align="center">
+        <h1>Welcome, {{ username }}!</h1>
+    </div>
+    <div class="row">
+    <div class="col-sm-12" style="margin-bottom: 10px;">
+        <div class="pull-left">
+            <a href="/customerRoute" id="viewCurrentRide" class="btn btn-outline-info">View Current Ride</a>
+        </div>
+        <div class="">
+            <a href="/" id="logout" class="btn btn-outline-info">Log Out</a>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}

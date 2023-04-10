@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!--No driver available for booking currently-->
+    <div align="center">
+        <h1>{{driverStatus}}s available</h1>
+    </div>
+        <html>
+          <head>
+            <title>Confirm Ride</title>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+          </head>
+          <body>
+          <div id="noRide">
+              <h5>Sorry, there are no available drivers at the moment. Please book at a later time.</h5>
+          </div>
+
+          <a href="/home" id="noRideHome" class="btn btn-outline-info">Home</a>
+
+          </body>
+
+
+        </html>
+
+
+
+{% endblock %}

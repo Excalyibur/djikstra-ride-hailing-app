@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!--After ride is booked-->
+    <div align="center">
+        <h1>Booking Confirmed</h1>
+    </div>
+
+        <html>
+          <head>
+            <title>Confirmed Ride</title>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+          </head>
+          <body>
+          <h3>Ride Info</h3>
+          <p>Ride is from: {{startLocation}} </p>
+          <p>Ride is to: {{endLocation}} </p>
+          <p>Distance is: {{customerDistance}} KM</p>
+          <p>Ride Cost is: ${{rideCost}}</p>
+
+          <div id="rideStatusBox">
+              <h5>Status:</h5>
+              <h6>{{driverStatus}}</h6>
+              <h6>{{driverInfo}}</h6>
+          </div>
+                    {{ map | safe }}
+
+          <form id=centerRide method="POST">
+              <div id="btnSect" align="center" >
+                  <button type="submit" id="homeButton" class="btn btn-outline-info">Home</button>
+              </div>
+          </form>
+
+          </body>
+
+
+        </html>
+
+
+
+{% endblock %}

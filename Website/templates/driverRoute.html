@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!--Show driver their current customer location-->
+    <div align="center">
+        <h1>Pick Up Customer</h1>
+    </div>
+
+        <html>
+          <head>
+            <title>Pick Up Customer</title>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+          </head>
+          <body>
+          <h3>Ride Info</h3>
+          <p>Drop off is at: {{endLocation}}</p>
+          <div id="driverStatus">
+              <h5>Status:</h5>
+              <h6>{{driverStatus}}</h6>
+          </div>
+            {{ map | safe }}
+          <br><br/>
+          <form method="POST">
+              <button type="submit" id="driverLogout1" class="btn btn-outline-info" name="submit_button" value="logout">Logout</button>
+              <button type="submit" id="driverCompleteTrip" class="btn btn-outline-info" name="submit_button" value="completeTrip">Complete Trip</button>
+          </form>
+          <br><br/>
+          </body>
+
+
+        </html>
+
+
+
+{% endblock %}

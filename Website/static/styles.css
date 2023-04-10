@@ -1,0 +1,226 @@
+.form-control{
+    max-width: 100%;
+    width: 250px;
+}
+
+.form{
+    display: inline-block;
+    text-align: center;
+}
+
+#centerLogin, #centerDriver{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#centerRegister{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+#centerRide{
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+
+#centerDriverHome{
+    position: absolute;
+    top: 70%;
+    left: 52%;
+    transform: translate(-50%, 50%);
+}
+
+#driverLogout{
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+#driverBacktoHome{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#driverLocationBtn{
+    margin-top: 5%;
+    margin-left: 40%;
+}
+
+#driverLogout1{
+    margin-left: 40%;
+}
+
+#driverCompleteTrip{
+    margin-left: 2%;
+}
+
+#driverStatus{
+    background-color: #17A2B8;
+    color: white;
+    width: 200px;
+    text-align: center;
+    padding:2px;
+    border-radius: 5px;
+    margin-left: 82%;
+    margin-top: -7.5%;
+    margin-bottom: 2%;
+}
+
+#emailError{
+    color: #ba3939;
+    background: #ffe0e0;
+    border: 1px solid #a33a3a;
+    width: 400px;
+    height: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 355px;
+}
+
+#alert{
+    width: 400px;
+    text-align: center;
+    margin-left: 355px;
+}
+
+#welcome{
+    margin-top: 20px;
+}
+
+.col-sm-12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+#bookride, #viewCurrentRide{
+    width: 220px;
+    height: 120px;
+    margin-right: 10px;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#rideButton{
+    width: 15%;
+    margin-top: 20%;
+}
+
+#rideStatusBox{
+    background-color: #17A2B8;
+    color: white;
+    width: 200px;
+    text-align: center;
+    padding:2px;
+    border-radius: 5px;
+    margin-left: 82%;
+    margin-top: -10%;
+    margin-bottom: 2%;
+}
+
+#confirmRideButton{
+    width: 8%;
+    margin-top: 1%;
+}
+
+#container{
+    margin: 0 auto;
+    width: 45%;
+    height: 300px;
+    overflow: visible;
+}
+
+#container select{
+    width: 200px;
+    height: 40px;
+    color: grey;
+}
+
+#logout{
+    width: 220px;
+    height: 120px;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#pickUp, #dropOff, #startLoc, #isAvailable{
+    border-color: lightgrey;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+#mapdiv{
+    margin-top: 40px;
+}
+
+#ridePart1{
+    float:left;
+}
+
+#ridePart2{
+    float: right;
+}
+
+#ridePart2{
+    float: right;
+}
+
+#driverButton{
+    margin-top: 7%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+#statusBox{
+    background-color: #17A2B8;
+    color: white;
+    width: 200px;
+    text-align: center;
+    padding:2px;
+    border-radius: 5px;
+    margin-left: 82%;
+    margin-top: -7.5%;
+    margin-bottom: 2%;
+}
+
+#noRide{
+    background-color: #d36a6a;
+    color: white;
+    width: 530px;
+    height: 300px;
+    text-align: center;
+    padding: 11% 2px 2px 2px;
+    border-radius: 5px;
+    margin: 5% auto 0;
+}
+
+#noRideHome{
+    margin-left: 47%;
+    margin-top: 2%;
+}
+
+#completeTrip{
+    margin-left: 50%;
+    margin-top: -16%;
+}
+
+#customerLogout{
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+
+#driverBack{
+    margin-left: 10%;
+}
+
+#homeButton{
+    margin-top: 1%;
+}
+

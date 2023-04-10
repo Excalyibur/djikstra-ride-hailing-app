@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!--Driver homepage-->
+    <div align="center">
+        <h1>Home</h1>
+    </div>
+        <html>
+          <head>
+          </head>
+          <body>
+            <div id='mapdiv' style='height:400px;'> {{map|safe}}</div>
+
+          </body>
+    </html>
+
+    <form id=centerDriverHome method="POST">
+        <h3>Please select your location:</h3>
+        <label for="isAvailable">Choose an Option</label>
+            <select name="isAvailable" id="isAvailable" required>
+                <option value="TRUE">Start shift</option>
+                <option value="FALSE">End shift</option>
+                </select>
+        <br><br/>
+        <label for="startLoc" >Starting Location:</label>
+            <select name="startLoc" id="startLoc" required>
+              <option value="0">BLK 258A Punggol Field</option>
+              <option value="1">BLK 266A Punggol Central</option>
+              <option value="2">BLK 268D Punggol Walk</option>
+              <option value="3">BLK 73 Punggol Central</option>
+              <option value="4">BLK 298A Punggol Place</option>
+              <option value="5">BLK 302A Punggol Place</option>
+              <option value="6">BLK 306C Punggol Place</option>
+              <option value="7">BLK 202A Punggol Field</option>
+              <option value="8">BLK 298 Punggol Central</option>
+              <option value="9">BLK 305D Punggol Road</option>
+              <option value="10">BLK 101C Punggol Road</option>
+              <option value="11">BLK 45 Punggol Central</option>
+              <option value="12">BLK 615C Edgefield Plains</option>
+              <option value="13">BLK 110D Edgefield Plains</option>
+              <option value="14">BLK 52 Edgefield Plains</option>
+              <option value="15">BLK 635C Punggol Drive</option>
+              <option value="16">BLK 11 Punggol Field</option>
+              <option value="17">BLK 160B Punggol Central</option>
+              <option value="18">BLK 653A Punggol Drive</option>
+            </select>
+
+        <button type="submit" id="driverButton" class="btn btn-outline-info" name="submit_button" value="submit">Confirm</button>
+        <button type="submit" id="driverLogout" class="btn btn-outline-info" name="submit_button" value="logout">Logout</button>
+</form>
+
+
+{% endblock %}

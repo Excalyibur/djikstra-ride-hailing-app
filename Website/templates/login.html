@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!--Customer login page-->
+{% if username %}
+    <h1>Hello {{ username }}!</h1>
+{% else %}
+    <div align="center">
+        <h1>Lift Ride Hailing</h1>
+    </div>
+    <br/>
+    <div align="center">
+        <img src="../static/Images/pngegg.png" width="280" height="200">
+    </div>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+        <div class="alert alert-{{ category }} mb-3" role="alert" id="alert">
+            {{ message }}
+        </div>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+    <form id="centerLogin" method="POST">
+          <br/>
+          <label for="username">Username:</label>
+          <input type="text" class="form-control" id="username" name="username" required><br/>
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" id="password" name="password" required><br/>
+          <a href="/register">Not a user? Register here</a><br/><br/>
+          <a href="/driver">Are you a driver? Login here </a><br/><br/>
+
+        <button type="submit" class="btn btn-outline-info">Login</button>
+    </form>
+{% endif %}
+
+{% endblock %}
